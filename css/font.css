@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Regular-webfont.eot');
+    src: url('Oswald-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Oswald-Regular-webfont.woff') format('woff'),
+         url('Oswald-Regular-webfont.ttf') format('truetype'),
+         url('Oswald-Regular-webfont.svg#Oswald') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rex_bold_bold';
+    src: url('rex_bold-webfont.eot');
+    src: url('rex_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('rex_bold-webfont.woff') format('woff'),
+         url('rex_bold-webfont.ttf') format('truetype'),
+         url('rex_bold-webfont.svg#rex_bold_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rex_lightregular';
+    src: url('rex_light-webfont.eot');
+    src: url('rex_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('rex_light-webfont.woff') format('woff'),
+         url('rex_light-webfont.ttf') format('truetype'),
+         url('rex_light-webfont.svg#rex_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
