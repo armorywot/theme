@@ -17,19 +17,31 @@ include_once get_template_directory() . '/WGApi/Wargag.php';
 $Wargag = new Wargag();
 
 $content = $Wargag->getContent('picture');
-print_r($_GET);die();
+
+if (isset($_GET['access_token']) && isset($_GET['nickname']) && isset($_GET['account_id'])) {
+    $Wargag::authWG($_GET['access_token'], $_GET['nickname'], $_GET['account_id']);
+}
+
+//if(!isset($_SESSION['User'])){
 ?>
 <form action="https://api.worldoftanks.ru/wot/auth/login/" method="POST">
-    <!--<input type="hidden" name="method" value="post">-->
+    
     <input type="hidden" name="redirect_uri" value="http://wp.local/wargag/">
     <input type="hidden" name="application_id" value="a1a5502d2265a9846fc71927679f46f7">
-    <input type="submit" value="Авторизация">
-</form>
+    
+    <div class="l-big-orange-button l-big-orange-button__mt">
+        <span class="b-big-orange-button">
+            <input type="submit" class="b-big-orange-button_right" value="Авторизация">
+        </span>
+    </div>
 
+    
+</form>
 <?php
+//}
 $i = 0;
 foreach ($content as $post) {
-    if($i > 5)
+    if ($i > 5)
         break;
     echo '<img src="' . $post->media_url . '"><br>';
     echo '<h2>' . $post->description . '</h2><h1>' . $post->rating . '</h1> <br>';
