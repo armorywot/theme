@@ -459,7 +459,7 @@
 					),
 					'value'=>array (
 						'homelink'=>'Home',//------------------------------
-						'search'=>'Search',//------------------------------
+						'search'=>'Поиск',//------------------------------
 						'nothingfound'=>'Nothing found, please search again.'//------------------------------
 					)
 				),
@@ -528,9 +528,9 @@
 						)
 					),
 					'value'=>array (
-						'readmore'=>'Read More',//------------------------------
+						'readmore'=>'Дальше',//------------------------------
 						'searchresults'=>'Search results for \'%s\'', 
-						'before-category'=>'Posted in&nbsp',//------------------------------
+						'before-category'=>'Опубликовано&nbsp',//------------------------------
 						'nextpage'=>'Next Page',//------------------------------
 						'tags'=>'Tags',//------------------------------
 						'relatedposts'=>'Related Posts',
@@ -666,9 +666,9 @@
 					),
 					'value'=>array(
 						'password'=>'This post is password protected. Enter the password to view comments.',//------------------------------
-						'noresponses'=>'No comments',//------------------------------
-						'oneresponse'=>'One comment',//------------------------------
-						'multiresponse'=>'% comments',//------------------------------
+						'noresponses'=>'Нет комментариев',//------------------------------
+						'oneresponse'=>'Один коментарий',//------------------------------
+						'multiresponse'=>'% коментария',//------------------------------
 						'formoneresponse'=>'One comment to %1$s',//------------------------------
 						'formmultiresponse'=>'%2$s comments to %1$s',//------------------------------
 						'comment_notes_before'=>'',//------------------------------
@@ -688,7 +688,7 @@
 						'says'=>'says',//------------------------------
 						'reply'=>'Reply',//------------------------------
 						'cancelreply'=>'Cancel reply',//------------------------------
-						'edit'=>'Edit',//------------------------------
+						'edit'=>'Редактировать',//------------------------------
 						'delete'=>'Delete',
 						'spam'=>'Spam',
 						'comment'=>'Comment',//------------------------------

@@ -10,7 +10,7 @@ input[type="text"]:focus { outline: none; }
 body { padding:0px; font-family:arial; font-size:12px; margin:0px; margin-bottom:0px; }
 ul { margin:0px; padding:0px; list-style:none; } 
 h1 { font-family: 'Oswald',sans-serif; font-weight:normal; font-size:21px; }
-h2 { font-family: 'Oswald',sans-serif; font-size:18px; font-weight:normal; }
+h2 { font-family: 'Oswald', 'Copperplate Gothic Light';  font-size:12px;}
 h3 { font-family: 'Oswald',sans-serif; font-size:14px; font-weight:normal; margin:0px; padding:10px 0px; }
 img { border-width:0px; }
 
@@ -280,4 +280,8 @@ ul.contact-details li { padding-left:40px; line-height:32px; }
 
 .smthemes-parent .smthemes {
     display: none;
+}
+
+.header-off{
+    height: 485px;
 }

@@ -1,5 +1,44 @@
 <?php
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// TAXONOMY
+add_action('init', 'create_topics_hierarchical_taxonomy', 0);
+
+// создаём собственную таксономию, называем её "WARGAG"
+function create_topics_hierarchical_taxonomy() {
+
+// определим строки для пользовательского интерфейса:
+
+    $labels = array(
+        'name' => 'WARGAG',
+        'singular_name' => 'WARGAG',
+        'search_items' => 'Search WARGAG',
+        'all_items' => 'All WARGAG',
+        'parent_item' => 'WARGAG',
+        'parent_item_colon' => 'WARGAG:',
+        'edit_item' => 'Edit WARGAG',
+        'update_item' => 'Update WARGAG',
+        'add_new_item' => 'Add new WARGAG',
+        'new_item_name' => 'Name new WARGAG',
+        'menu_name' => 'WARGAG',
+    );
+
+// Теперь регистрируем новую иерархичную таксономию
+
+    register_taxonomy('wargag', 'post', array(
+        'hierarchical' => true,
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'wargag'),
+    ));
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 if ( ( $pagenow == "themes.php" ) && current_user_can('administrator') && isset( $_GET['activated'] ) && ( $_GET['activated']=='true' ) ) {
 	if (!include_once( get_template_directory() . '/inc/activation.php' )) {
 		$stylesheet = get_option( 'theme_switched' );

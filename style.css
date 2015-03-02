@@ -6,16 +6,17 @@ style
 @import url(css/font.css);
 
 html {
-    background:url(images/back.png) scroll;
+    /*background:url(images/back.png) scroll;*/
 }
 #all{
-    background:url(images/top.png) top no-repeat;
+    background:url(images/leo.jpg) top no-repeat;
 }
 body {	
     color:#636363;
     position:relative;
     font-family:'tahoma';
-    background:url(images/back-slider.png) no-repeat 50% 145px;
+    /*background:url(images/back-slider.png) no-repeat 50% 145px;*/
+    /*background:url(images/leo.jpg) no-repeat 50% 145px;*/
 }
 .no-slider{background: none !important;}
 a {
@@ -27,7 +28,7 @@ a:hover {
 }
 a.post_ttl, .post-caption h1 {
     color:#636363;
-    font-size:50px;
+    font-size:32px;
     font-family: 'rex_lightregular';
     text-transform:uppercase;
 }
@@ -236,7 +237,7 @@ body.woocommerce-page #content nav.woocommerce-pagination ul li a:focus  {
         position:absolute;
         left:0;
         right:800px;
-        background:url(images/top-repeat.png) repeat-x ;
+        /*background:url(images/top-repeat.png) repeat-x ;*/
         height:193px;
 
     }
@@ -304,7 +305,7 @@ body.woocommerce-page #content nav.woocommerce-pagination ul li a:focus  {
     }
     #mainmenu li a:hover{
         color:#1897cc;
-        background:url(images/mainmenu-hover.png) no-repeat top;
+        /*background:url(images/mainmenu-hover.png) no-repeat top;*/
     }
 
 
@@ -608,7 +609,9 @@ body.woocommerce-page #content nav.woocommerce-pagination ul li a:focus  {
     #header  ul.children li a{
         color:#fff !important;
     }
-
+    .header-off{
+        height: 20px;
+    }
 }
 
 /*	-==========================- MOBILE -==========================-  */
@@ -673,4 +676,22 @@ body.woocommerce-page #content nav.woocommerce-pagination ul li a:focus  {
     #s {
         width:70%;
     }
+    .header-off{
+        height: 10px;
+    }
+    .wargagPicture{
+        max-width: 100% !important;
+    }
+    
+}
+
+/* Custom style */
+
+.wargagPicture{
+    max-width: 640px;
+}
+
+wargagVideo{
+    width: 640px;
+    height: 480px;
 }
