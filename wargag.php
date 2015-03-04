@@ -21,7 +21,7 @@ include_once get_template_directory() . '/WGApi/Wargag.php';
 
 $Wargag = new Wargag();
 
-//$content = $Wargag->getContent();
+$content = $Wargag->getContent('picture');
 
 
 $Wargag->putContent('picture');
